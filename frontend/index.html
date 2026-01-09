@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <title>LMS | Learning Management System</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Learning Management System for online courses and corporate training" />
+  <meta name="keywords" content="LMS, Online Courses, Corporate Training, E-learning" />
+  <meta name="author" content="LMS Platform" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Base Styles -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #f4f6f8;
+      color: #333;
+      min-height: 100vh;
+    }
+
+    .loader {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .loader span {
+      color: #2563eb;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- React Mount Point -->
+  <div id="root">
+    <div class="loader">
+      Loading <span>&nbsp;LMS Platform...</span>
+    </div>
+  </div>
+
+  <!-- Environment Variables (Optional for non-React usage) -->
+  <script>
+    window.__ENV__ = {
+      API_BASE_URL: "/api"
+    };
+  </script>
+
+  <!-- React Entry (Vite / CRA / Webpack will inject build files) -->
+  <script type="module" src="/src/main.jsx"></script>
+
+</body>
+</html>
